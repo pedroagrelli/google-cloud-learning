@@ -20,7 +20,6 @@ O `npm install` terminou, mas deixou alguns avisos importantes:
 - O pacote `cloudevents@0.8.0` declara suporte a versões do Node entre 16 e 22, enquanto o ambiente mostra Node `v26.13.0`. É um aviso de compatibilidade: o comando concluiu, mas vale usar a versão de Node indicada pelo laboratório para evitar problemas inesperados.
 - O npm também avisou sobre uma dependência antiga (`uuid@8.3.2`) e reportou três vulnerabilidades moderadas na árvore instalada. Não rode `npm audit fix --force` às cegas: isso pode introduzir atualizações incompatíveis. Em um laboratório, confira primeiro as instruções oficiais e o resultado de `npm audit`.
 
-**Em resumo:** a pasta e as dependências foram preparadas. O print não mostra todo o código da função nem o comando de deploy, então não dá para afirmar por ele sozinho como esses passos foram feitos.
 
 ## Print 2 — Publicando uma mensagem e conferindo os logs
 
@@ -38,20 +37,6 @@ Depois, o comando abaixo consulta os logs da função `nodejs-pubsub-function` n
 gcloud functions logs read nodejs-pubsub-function --region=us-east1
 ```
 
-Entre as entradas aparece `LOG: Hello, Cloud Function Gen2!`. Esse é o resultado esperado: a função recebeu a mensagem e registrou o texto nos logs. Também aparecem registros de inicialização da instância e da verificação de saúde do contêiner (`STARTUP TCP probe`), que indicam a inicialização do serviço — não são, por si só, erros.
-
-**Em resumo:** o print confirma o caminho do evento: publicação no Pub/Sub → execução da função → mensagem visível nos logs.
-
-## O que aprendi
-
-- O Cloud Shell permite criar e configurar os arquivos do exercício sem instalar ferramentas localmente.
-- O Pub/Sub pode disparar uma função quando uma mensagem é publicada em um tópico.
-- Os logs ajudam a confirmar se a função recebeu e processou o evento.
-- Avisos de versão e vulnerabilidades merecem atenção, mesmo quando a instalação termina com sucesso.
-
-## Observação sobre as imagens
-
-As duas imagens aparecem nesta conversa, mas não encontrei arquivos de imagem correspondentes na árvore do repositório. Por isso, este documento explica cada print, mas ainda não consegue exibi-los aqui. Quando os arquivos forem enviados ao repositório (por exemplo, em `projetos/imagens/cloud-run-function-01.png` e `projetos/imagens/cloud-run-function-02.png`), posso inserir as imagens junto às seções correspondentes.
 
 ## Limpeza e custos
 
@@ -59,7 +44,5 @@ O laboratório usa um projeto Qwiklabs temporário. Ao terminar, siga as instru�
 
 ## Referências
 
-- [Cloud Run functions — documentação](https://cloud.google.com/run/docs/functions/overview)
-- [Pub/Sub — documentação](https://cloud.google.com/pubsub/docs/overview)
-- [Google Cloud CLI: publicar mensagens em tópicos](https://cloud.google.com/sdk/gcloud/reference/pubsub/topics/publish)
-- [Google Cloud CLI: ler logs de funções](https://cloud.google.com/sdk/gcloud/reference/functions/logs/read)
+<img width="1311" height="472" alt="gc5" src="https://github.com/user-attachments/assets/da9a9041-9f45-4915-9a1a-8d2c8880103a" />
+<img width="1613" height="641" alt="gc4" src="https://github.com/user-attachments/assets/7850807d-4e7e-4a17-be50-574f50ac759f" />
