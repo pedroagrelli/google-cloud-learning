@@ -11,3 +11,5 @@ Neste laboratório, fiz o seguinte:
 - apaguei o cluster `lab-cluster` ao terminar o teste.
 
 Resultado: o cluster foi criado, o deployment e o serviço foram configurados, e depois o cluster foi removido. A captura não confirma que a aplicação chegou a ser acessada pelo IP externo.
+<img width="1613" height="828" alt="gc7" src="https://github.com/user-attachments/assets/7e12aac7-2c9f-4612-bd12-b868231bc423" />
+<img width="1318" height="396" alt="gc6" src="https://github.com/user-attachments/assets/d70ec981-e650-4116-84c3-a153b2007d68" />
