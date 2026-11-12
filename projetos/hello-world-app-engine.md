@@ -61,7 +61,8 @@ Cloud Shell
 
 ## Referências
 
-- [App Engine — documentação do Google Cloud](https://cloud.google.com/appengine/docs/standard)
-- [Google Cloud SDK: `gcloud app deploy`](https://cloud.google.com/sdk/gcloud/reference/app/deploy)
-- [Google Cloud SDK: `gcloud app logs tail`](https://cloud.google.com/sdk/gcloud/reference/app/logs/tail)
-- [Cloud Shell — documentação do Google Cloud](https://cloud.google.com/shell/docs)
+
+<img width="1060" height="501" alt="gc3" src="https://github.com/user-attachments/assets/b572f6d4-87b1-4c6d-95b7-edaf692114de" />
+<img width="480" height="134" alt="gc2" src="https://github.com/user-attachments/assets/008c4ef1-cb07-4b1a-a05e-d67f96cb52c5" />
+<img width="1610" height="811" alt="gc1" src="https://github.com/user-attachments/assets/c278ea0c-2de8-4556-ab06-badcc6ecc1d6" />
+
